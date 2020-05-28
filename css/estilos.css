@@ -1,0 +1,414 @@
+/*--- Desarrollador: Javier Blanco -----*/
+/*---          02/05/2018          -----*/
+/*--- Código CSS para protafolio web ---*/
+
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:border-box;
+}
+
+body {
+
+	background: #98C1D9;
+	font-family: "Titillium Web", Sans-serif;
+	font-size: 16px;
+
+}
+
+.contenedor {
+
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+/* ------- Estilos Header ------- */
+
+header {
+
+	background-color: #08090A;
+	background-position: center;
+	max-height: 400px;
+
+}
+
+header .menu {
+
+	margin: 40px 0;
+	text-align: right;
+
+}
+
+header .menu a {
+
+	margin: 0 20px;
+	padding-bottom: 9px;
+	display: inline-block;
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	font-size: 1em;
+	color: white;
+
+}
+
+header .menu a:hover {
+
+	border-bottom: 2px solid #fff;
+
+}
+
+
+header .contenedor-texto {
+
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin: 120px 0;
+
+}
+
+header .contenedor-texto .texto {
+
+	border: 2px solid rgba(255,255,255,0.5);
+	border-radius: 5px;
+	display: inline-block;
+	text-align: center;
+	padding: 20px 60px;
+}
+
+header .contenedor-texto .texto h1,
+header .contenedor-texto .texto h2 {
+
+	color: #fff;
+	font-weight: 400;
+	margin: 0;
+}
+
+header .contenedor-texto .texto .nombre {
+
+	margin-bottom: 10px;
+	font-size: 40px;
+	line-height: 40px;
+}
+
+header .contenedor-texto .texto .profesion {
+
+	font-size: 25px;
+	line-height: 50px;
+}
+
+
+/* ------ Estilos Main -------- */
+
+.main .contenedor {
+
+	overflow: visible;
+}
+
+.main .acerca-de {
+
+	text-align: center;
+}
+
+.main .acerca-de .foto {
+
+	margin-top: -50px;
+}
+
+.main .acerca-de .foto img {
+
+	vertical-align: top;
+	border-radius: 50%;
+	border: 5px solid rgba(152,193,217,0.5)
+}
+
+.main .acerca-de .texto {
+
+	color: #08090a;
+	font-weight: 400;
+	font-size: 1.2em;
+	width: 80%;
+	line-height: 30px;
+	margin: 40px auto;
+}
+
+.main .acerca-de .texto .titulo {
+
+	font-size: 35px;
+	line-height: 35px;
+	font-weight: 300;
+	text-align: center;
+	color: #6f42ed;
+
+}
+
+span {
+
+	color: #6f42ed;
+	text-decoration: underline;
+
+}
+
+.main .trabajos {
+
+	/*background-color: #3c3c3c;*/
+	background-color: #a7a2a9;
+	padding: 60px 80px;
+
+}
+
+.main .trabajos .contenedor-trabajos {
+	overflow: hidden;
+}
+
+.main .trabajos .titulo {
+
+	font-size: 35px;
+	line-height: 35px;
+	font-weight: 300;
+	text-align: center;
+	color: #08090a;
+
+}
+
+.main .trabajos .contenedor-trabajos {
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+
+}
+
+.main .trabajos .contenedor-trabajos .trabajo {
+
+	width: 30%;
+	text-align: center;
+
+
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .thumb {
+
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .thumb img {
+
+	vertical-align: top;
+	width: 75%;
+	height: 75%;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .texto-trabajo {
+
+	text-align: center;
+	line-height: 10px;
+	padding-bottom: 5px;
+
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .texto-trabajo .titulo-trabajo {
+
+	font-weight: 700;
+	color: #6f42ed;
+}
+
+/* --------- Footer -------------------*/
+/* ------ Formulario de Contacto ----- */
+
+footer .contacto {
+
+	padding:60px;
+
+}
+
+footer .contacto .titulo {
+
+	font-size: 35px;
+	line-height: 35px;
+	font-weight: 300;
+	text-align: center;
+	color: #6f42ed;
+	padding-bottom: 20px;
+}
+
+footer .contacto .contenedor .formulario {
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+footer .contacto .contenedor .formulario .nombre,
+footer .contacto .contenedor .formulario .correo,
+footer .contacto .contenedor .formulario textarea {
+
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 15px 20px;
+	font-size: 20px;
+	color: #3c3c3c;
+	font-family:"Titillium Web"; 
+
+}
+
+footer .contacto .contenedor .formulario .nombre:focus,
+footer .contacto .contenedor .formulario .correo:focus,
+footer .contacto .contenedor .formulario textarea:focus {
+
+	border:2px solid #6f42ed;
+} 
+
+footer .contacto .contenedor .formulario .nombre,
+footer .contacto .contenedor .formulario .correo {
+
+	width: 49%;
+	margin-bottom: 15px;
+}
+
+
+footer .contacto .contenedor .formulario textarea {
+
+	width: 100%;
+	min-width: 100%;
+	height: 100px;
+	max-height: 250px;
+	min-height: 80px;
+}
+
+footer .contacto .contenedor .formulario .boton {
+
+	margin: auto;
+	margin-top: 30px;
+	font-size: 20px;
+	background-color: #6f42ed;
+	color: white;
+	font-weight: 600;
+	border: none;
+	padding: 15px 30px;
+	border-radius: 3px;
+	font-family: "Titillium Web";
+
+}
+
+footer .contacto .contenedor .formulario .boton:hover {
+
+	background-color: #a7a2a9;
+	cursor: pointer;
+
+}
+
+/* ----- Redes sociales ------ */
+
+footer .redes-sociales {
+
+	background-color: #3c3c3c;
+	padding: 80px 0;
+}
+
+footer .redes-sociales .contenedor {
+
+	display: flex;
+	justify-content: center;
+}
+
+footer .redes-sociales a {
+
+	color:#98c1d9;
+	text-align: center;
+	display: block;
+	padding:0 20px;
+	border-radius: 5px;
+	font-size: 40px;
+	margin: 0 30px;
+}
+
+footer .redes-sociales .youtube:hover {
+
+	background-color: #ff0000;
+}
+
+
+footer .redes-sociales .twitter:hover {
+
+	background-color: #1da1f2;
+}
+
+footer .redes-sociales .linkedin:hover {
+
+	background-color: #0077b5;
+
+}
+
+/* --- Diseño Adaptable moviles --- */
+
+/* --- Usando Media Queries     --- */
+
+
+@media screen and (max-width: 450px) {
+
+	header .contenedor-texto .texto .nombre {
+
+		font-size: 25px;
+	}
+
+	header .contenedor-texto .texto .profesion {
+
+		font-size: 18px;
+	}
+
+	header .menu {
+		text-align: center;
+	}
+
+	.main .trabajos .contenedor-trabajos {
+
+		padding-left: 20px;
+	}
+	.main .trabajos .contenedor-trabajos .trabajo {
+
+		width: 100%;
+
+	}
+
+	footer .redes-sociales .contenedor {
+
+		flex-wrap: wrap;
+	}
+	
+}
+
+
+@media screen and (max-width:320px) {
+
+	header .contenedor-texto .texto {
+
+		margin-top: -50px;
+	}
+
+	header .contenedor-texto .texto .nombre {
+
+		font-size: 20px;
+	}
+
+	header .contenedor-texto .texto .profesion {
+
+		font-size: 15px;
+	}
+	
+	.main .trabajos .contenedor-trabajos .trabajo {
+
+		width: 100%;
+
+	}
+
+	footer .redes-sociales .contenedor {
+
+		flex-wrap: wrap;
+	}
+}
